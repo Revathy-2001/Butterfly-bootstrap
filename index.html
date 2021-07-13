@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<title>Butterfly Bootstrap Template Demo</title>
+	<style>
+		.Bootstrapimage{
+			padding:10px 5px 10px 15px;
+			border-bottom: 2px solid grey;
+			background-color: white;
+			position:fixed;
+			top:0px;
+			width: 100%;
+			z-index: 1;
+		}
+		.butterflylogo{
+			margin-left:  4%;
+			background-color: white; 
+		}
+		.navbar{
+			padding: 25px;
+			position: fixed;
+			top: 53px;
+			width: 100%;
+			background-color: white;
+			user-select: none;
+			z-index: 1;
+		}
+		.navbar a{
+			font-size: 15px;
+			text-align: center;
+			text-decoration: none;
+			display: block;
+			float:right;
+			margin-right: 3%;
+			color: #160155;
+		}
+		a:hover{
+			color: dodgerblue;
+		}
+		a:active{
+			color: dodgerblue;
+		}
+		.firstimage{
+			height: 300px;
+			width: 500px;
+			position: absolute;
+			top: 180px;
+			z-index: -1;
+		}
+		.head{
+			color:#0F394c;
+			font-size: 42px;
+			position: absolute;
+			top: 150px;
+			left: 70px;
+			z-index: -1;
+		}
+		.para{
+			color:#0F394c;
+			font-size: 20px;
+			margin-left: 6%;
+			position: absolute;
+			top: 320px;
+			z-index: -1;
+		}
+		.start{
+			background-color: #19B6A9 ;
+			padding: 12px;
+			color: white;
+			width: 150px;
+			outline: none;border:none;
+			position: absolute;top:445px;
+			border-radius: 5px;
+			font-family: verdana;
+			cursor: pointer;
+			/*z-index: -1;*/
+			margin-left: 5% ;
+			left: 10px;
+		}
+		.start:hover{
+			cursor: pointer;
+			background-color: mediumblue;
+		}
+		body{
+			margin:0;
+			/*background-image: url("Images/building.jpg");
+*/		}
+		.secondimage{
+			margin-left: 5%;
+		}
+		.about{
+			margin-top: 40%;
+		}
+		.secondhead
+		{
+			color:#0F394c;
+			font-size: 25px;
+			position: absolute;
+			top: 600px;
+			left: 620px;
+			z-index: -1;
+		}
+		.secondpara{
+			color:#0F394c;
+			font-size: 18px;
+			position: absolute;
+			top: 700px;
+			left: 620px;
+			z-index: -1;
+		}
+		.aboutdetails{
+			color:#0F394c;
+			position: absolute;
+			top: 825px;
+			left: 720px;
+			z-index: -1;
+		}
+		.thirdsection{
+			
+			background-image: url(Images/counts-bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			padding-bottom:380px;
+		}
+		.thirdhead{
+			text-align: center;
+			color: #0F394c;
+			font-size: 25px;
+			position: absolute;
+			left: 450px;
+			top: 50px;
+		}
+		.thirdpara{
+			color: #0F394c;
+			font-size: 18px;
+			position: absolute;
+			left: 300px;
+			top:90px;
+		}
+		.numbers{
+			position: absolute;
+			font-size: 40px;
+			top: 250px;
+			color:rgba(9, 0, 72, 1);
+		}
+		.words{
+			position: absolute;
+			color:rgba(9, 0, 72, 1);
+			font-size: 18px;
+			top: 300px;
+		}
+		.first{
+			position: absolute;
+			left: 150px;
+		}
+		.second{
+			position: absolute;
+			left: 450px;
+		}
+		.third{
+			position: absolute;
+			left: 700px;
+		}
+		.fourth{
+			position: absolute;
+			left: 1000px;
+		}
+		.support{
+			position: absolute;
+			left: 690px;
+		}
+		.whole{
+			position: relative;
+			width: 60%;
+		}
+		.image{
+			width: 100%;
+			height: auto;
+			position: relative;
+			left: 50px;
+		}
+		.overlay{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			right: 0;
+			height: 100%;
+			transform:scale(0);
+			transition: .3s ease;
+		}
+		.whole:hover .overlay{
+			transform:scale(1);
+		}
+		table{
+			border:0.5px solid rgb(0,0,0,0.1);
+			width: 90%;
+			margin-left: 5%;
+			padding: 10px;
+		}
+		.table2{
+			border-bottom:  none;
+		}
+		.Services{
+			color: #0F394c;
+			background-color: rgba(9, 167, 255, 0.1);
+			height: 800px;
+			font-family: sans-serif;
+		}
+		.box1{
+			background-color: white;
+			border:1px solid rgba(9, 167, 255, 0.1);
+			position: relative;
+			left: 80px;
+			top:50px;
+			width: 25%;
+			font-size: 17px;
+			border-radius: 10px;
+			padding: 0px 0px 7px 7px;
+			box-shadow: 10px 10px 5px rgba(9, 167, 255, 0.1);
+		}
+		.box1:hover{
+			position: relative;
+			transform: scale(1,1.1);
+		}
+		.box2{
+			background-color: white;
+			border:1px solid rgba(9, 167, 255, 0.1);
+			position: relative;
+			left: 470px;
+			top:-165px;
+			width: 25%;
+			font-size: 17px;
+			border-radius: 10px;
+			padding: 0px 0px 7px 7px;
+			box-shadow: 10px 10px 5px rgba(9, 167, 255, 0.1);
+		}
+		.box2:hover{
+			position: relative;
+			transform: scale(1,1.1);
+		}
+		.box3{
+			background-color: white;
+			border:1px solid rgba(9, 167, 255, 0.1);
+			position: relative;
+			left: 860px;
+			top:-385px;
+			width: 25%;
+			font-size: 17px;
+			border-radius: 10px;
+			padding: 0px 0px 7px 7px;
+			box-shadow: 10px 10px 5px rgba(9, 167, 255, 0.1);
+		}
+		.box3:hover{
+			position: relative;
+			transform: scale(1,1.1);
+		}
+		.box4{
+			background-color: white;
+			border:1px solid rgba(9, 167, 255, 0.1);
+			position: relative;
+			left: 80px;
+			top: -340px;
+			width: 25%;
+			font-size: 17px;
+			border-radius: 10px;
+			padding: 0px 0px 7px 7px;
+			box-shadow: 10px 10px 5px rgba(9, 167, 255, 0.1);
+		}
+		.box4:hover{
+			position: relative;
+			transform: scale(1,1.1);
+		}
+		.box5{
+			background-color: white;
+			border:1px solid rgba(9, 167, 255, 0.1);
+			position: relative;
+			left: 470px;
+			top: -560px;
+			width: 25%;
+			font-size: 17px;
+			border-radius: 10px;
+			padding: 0px 0px 7px 7px;
+			box-shadow: 10px 10px 5px rgba(9, 167, 255, 0.1);
+		}
+		.box5:hover{
+			position: relative;
+			transform: scale(1,1.1);
+		}
+		.box6{
+			background-color: white;
+			border:1px solid rgba(9, 167, 255, 0.1);
+			position: relative;
+			left: 860px;
+			top: -780px;
+			width: 25%;
+			font-size: 17px;
+			border-radius: 10px;
+			padding: 0px 0px 7px 7px;
+			box-shadow: 10px 10px 5px rgba(9, 167, 255, 0.1);
+		}
+		.box6:hover{
+			position: relative;
+			transform: scale(1,1.1);
+		}
+		.b1{
+			position: relative;
+			left: 60px;
+			top:-22px;
+		}
+		.b1:hover{
+			color: dodgerblue;
+			cursor: pointer;
+			font-family: sans-serif;
+		}
+		.b2{
+			position: relative;
+			left: 60px;
+			top:-22px;
+		}
+		span{
+			position: relative;
+			top: 100px;
+			font-size: 40px;	
+		}
+		#ball{
+			color: rgba(255, 0, 0, 0.4);
+			font-size: 50px;
+			left: -5px;
+		}
+		#note{
+			color: rgba(244, 197, 0, 0.8);
+			font-size: 50px;
+			position: relative;
+			left: -5px;
+		}
+		#file{
+			color: dodgerblue;
+			font-size: 50px;
+			position: relative;
+			left: -5px;
+		}
+		#magnet{
+			color: green;
+			font-size: 50px;
+			position: relative;
+			left: -5px;
+		}
+		#globe{
+			color: rgba(215, 255, 0, 0.8);
+			font-size: 50px;
+			position: relative;
+			left: -5px;
+		}
+		#clock{
+			color: blue;
+			font-size: 50px;
+			position: relative;
+			left: -5px;
+		}
+		.portfolio{
+			color: #0F394c;
+			font-family: sans-serif;
+		}
+
+		.container1{
+			position: relative;
+			width: 200px;
+			left:80px;
+		}
+		.Picture1{
+			 display: block;
+			 width: 330px;
+			 height: auto;
+			 position: relative;
+		}
+		.overlay1{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			transform: scale(0);
+			transition: .3s ease;
+		}
+		.container1:hover .overlay1{
+			transform: scale(1);
+			transform: scale(1);
+		}
+		.container2{
+			position: relative;
+			width: 200px;
+			left: 440px;
+			top:-265px;
+		}
+		.Picture2{
+			 display: block;
+			 width: 350px;
+			 height: auto;
+			 position: relative;
+		}
+		.overlay2{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			transform: scale(0);
+			transition: .3s ease;
+		}
+		.container2:hover .overlay2{
+			transform: scale(1);
+			transform: scale(1);
+		}
+		.container3{
+			position: relative;
+			width: 200px;
+			left: 820px;
+			top:-530px;
+		}
+		.Picture3{
+			 display: block;
+			 width: 320px;
+			 height: auto;
+			 position: relative;
+		}
+		.overlay3{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			transform: scale(0);
+			transition: .3s ease;
+		}
+		.container3:hover .overlay3{
+			transform: scale(1);
+			transform: scale(1);
+		}
+		.container4{
+			position: relative;
+			width: 200px;
+			left: 90px;
+			top:-500px;
+		}
+		.Picture4{
+			 display: block;
+			 width: 320px;
+			 height: auto;
+			 position: relative;
+		}
+		.overlay4{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			transform: scale(0);
+			transition: .3s ease;
+		}
+		.container4:hover .overlay4{
+			transform: scale(1);
+			transform: scale(1);
+		}
+		.container5{
+			position: relative;
+			width: 200px;
+			left: 440px;
+			top:-740px;
+		}
+		.Picture5{
+			 display: block;
+			 width: 350px;
+			 height:245px;
+			 position: relative;
+		}
+		.overlay5{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			transform: scale(0);
+			transition: .3s ease;
+		}
+		.container5:hover .overlay5{
+			transform: scale(1);
+			transform: scale(1);
+		}
+		.container6{
+			position: relative;
+			width: 200px;
+			left: 820px;
+			top:-980px;
+		}
+		.Picture6{
+			 display: block;
+			 width: 320px;
+			 height:245px;
+			 position: relative;
+		}
+		.overlay6{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			transform: scale(0);
+			transition: .3s ease;
+		}
+		.container6:hover .overlay6{
+			transform: scale(1);
+			transform: scale(1);
+		}
+		.container7{
+			position: relative;
+			width: 200px;
+			left: 90px;
+			top:-960px;
+		}
+		.Picture7{
+			 display: block;
+			 width: 320px;
+			 height:245px;
+			 position: relative;
+		}
+		.overlay7{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			transform: scale(0);
+			transition: .3s ease;
+		}
+		.container7:hover .overlay7{
+			transform: scale(1);
+			transform: scale(1);
+		}
+		.container8{
+			position: relative;
+			width: 200px;
+			left: 440px;
+			top:-1205px;
+		}
+		.Picture8{
+			 display: block;
+			 width: 350px;
+			 height:245px;
+			 position: relative;
+		}
+		.overlay8{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			transform: scale(0);
+			transition: .3s ease;
+		}
+		.container8:hover .overlay8{
+			transform: scale(1);
+			transform: scale(1);
+		}
+		.container9{
+			position: relative;
+			width: 200px;
+			left: 820px;
+			top:-1450px;
+		}
+		.Picture9{
+			 display: block;
+			 width: 335px;
+			 height:245px;
+			 position: relative;
+		}
+		.overlay9{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			transform: scale(0);
+			transition: .3s ease;
+		}
+		.container9:hover .overlay9{
+			transform: scale(1);
+			transform: scale(1);
+		}
+		.Team{
+			position: relative;
+			top:-1400px;
+		}
+		.Team1block{
+			position: absolute;
+			top:150px;
+			left: 100px;
+			box-shadow: 10px 10px 10px rgb(0, 0, 0,0.1);
+		}
+		.Team2block{
+			position: absolute;
+			top:150px;
+			left: 380px;
+			box-shadow: 10px 10px 10px rgb(0, 0, 0,0.1);
+		}
+		.Team3block{
+			position: absolute;
+			top:150px;
+			left: 660px;
+			box-shadow: 10px 10px 10px rgb(0, 0, 0,0.1);
+		}
+		.Team4block{
+			position: absolute;
+			top:150px;
+			left: 940px;
+			box-shadow: 10px 10px 10px rgb(0, 0, 0,0.1);
+		}
+		.Team1{
+			position: relative;
+			left: 20px;
+		}
+		.Gallery{
+			position: relative;
+			top: -900px;
+		}
+		.Galleryimg1{
+			position: relative;
+			top:40px;
+			left: 110px;
+		}
+		.contact{
+			position: relative;
+			top: -800px;
+		}
+		.map{
+			position: relative;
+			top: -750px;
+			margin-left: 7%;
+			margin-right: 7%;
+		}
+		.details{
+			font-family: sans-serif;
+			color: #0F394c;
+			position:relative;
+			top: -700px;
+			margin-left: 8%;
+		}
+		#location{
+			height: 40px;
+			width: 350px;
+			position: relative;
+			top: -80px;
+			left: 350px;
+		}
+
+		#email{
+			height: 40px;
+			width: 710px;
+			position: relative;
+			left: 350px;
+			top: -130px;
+		}
+		.locationhead{
+			position: relative;
+			top:-10px;
+		}
+		.emailhead{
+			position:relative; 
+			top:-50px;
+		}
+		.locationcontent{
+			position: relative;
+			top:-10px;
+		}
+		.emailcontent{
+			position: relative;
+			top: -60px;
+		}
+		.call{
+			position: relative;
+			top: -100px;
+		}
+		.callcontent{
+			position: relative;
+			top: -100px;
+		}
+		#message{
+			height: 80px;
+			width: 710px;
+			position: relative;
+			left: 350px;
+			top: -190px;
+		}
+		#submit{
+			position: relative;
+			top: -100px;
+			border: 1px solid rgb(0,0,0,0.1);
+			height: 40px;
+			width: 180px;
+			background-color: #19B6A9;
+			border-radius: 6px;
+			color: white;
+			cursor: pointer;
+		}
+		#subscribeinbox{
+			box-shadow: 10px 10px 10px rgb(0, 0, 0,0.1);
+			width: 400px;
+			height: 35px;
+			position:absolute;
+			left: 310px;
+			outline: none;
+			border:1px solid rgb(0, 0, 0,0.1) ;
+		}
+		#subscribebtn{
+			box-shadow: 10px 10px 10px rgb(0, 0, 0,0.1);
+			background-color: #19B6A9;
+			width: 200px;
+			height: 40px;
+			position:absolute;
+			left: 710px;
+			border:1px solid rgb(0, 0, 0,0.1) ;
+			cursor: pointer;
+		}
+		.subscribe{
+			background-color: rgba(9, 167, 255, 0.1);
+			height: 250px;
+			font-family: sans serif;
+			position: relative;
+			top: -700px;
+		}
+		.end{
+			font-family: sans-serif;
+			position: relative;
+			top: -650px;
+			margin-left: 8%;
+		}
+		.UsefulLinks{
+			color: rgba(9, 0, 72, 1);
+			text-decoration:none;
+			position:absolute;
+			left: 300px;
+			top: -20px
+		}
+		.UsefulLinks:hover{
+			color: dodgerblue;
+			cursor: pointer;
+		}
+		.UsefulLinks2{
+			color: rgba(9, 0, 72, 1);
+			text-decoration:none;
+			position:absolute;
+			left: 530px;
+			top: -20px
+		}
+		.UsefulLinks2:hover{
+			color: dodgerblue;
+			cursor: pointer;
+		}
+		.social{
+			color: rgba(9, 0, 72, 1);
+			text-decoration:none;
+			position: absolute;
+			left: 800px;
+			top: -20px
+		}
+		.iconbar{
+			font-size: 30px;
+			color: dodgerblue;
+		}
+		.final{
+			background-color: rgba(9, 167, 255, 0.1);
+			height: 100px;
+			position: relative;
+			top: -550px;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="Bootstrapimage">
+			<img src = "Images/butterflylogo.jpg" width="200px">
+		</div>
+		<hr>
+
+
+		<div class="navbar " style="font-family: noto serif;">
+			<img src="Images/butterflylogo1.jpg" class="butterflylogo">
+			<a href="#contact" style="margin-right: 6%;">CONTACT</a>
+			<a href="#team">TEAM</a>
+			<a href="#portfolio">PORTFOLIO</a>
+			<a href="#services">SERVICES</a>
+			<a href="#about">ABOUT</a>
+			<a href="#home">HOME</a>
+		</div>
+	</div>
+
+	<div id = "home">
+		<p class="head" style="font-family:noto serif;">CREATING WEBSITES THAT <br> MAKE YOU STOP & STARE</p></div>
+		<p class="para">Accusantium quam, aliquam ultricies eget tempor id, aliquam eget<br>  nibh et. Maecen aliquam, risus at semper. Proin iaculis purus<br> consequat sem cure digni ssim. Donec porttitora entum.</p>
+		<img src="Images/hero-img.jpg" class="firstimage" style="margin-left:55%;">
+		<button class="start">Get Started</button>
+	</div>
+	<div id = "about">
+		<br><br><br>
+			<div class="about">
+				<img src="Images/videoimage.png" width="500px" height="600px" class="secondimage">
+				<h1 class="secondhead">Enim quis est voluptatibus aliquid consequatur<br> fugiat</h1>
+				<p class="secondpara">Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus.<br> Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed<br> facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur.<br> Suscipit aut voluptate.</p>
+				<div class="aboutdetails">
+					<h3>Lorem Ipsum</h3>
+					<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias<br>
+					   excepturi sint occaecati cupiditate non provident</p>
+					<h3>Nemo Enim</h3>
+					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br>
+					   praesentium voluptatum deleniti atque</p>
+					<h3>Dine Pad</h3>
+					<p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis<br>
+					   odit. Sunt aut deserunt minus aut eligendi omnis</p>
+				</div>
+			</div>
+		    <br><br>
+			<div class="thirdsection">
+				<h3 class="thirdhead">What we have achieved so far</h3>
+				<p class="thirdpara">Iusto et labore modi qui sapiente xpedita tempora et aut non ipsum consequatur illo.
+				</p>
+				<br><br>
+				<div class="numbers">
+					<b class="first">232</b>
+					<b class="second">521</b>
+					<b class="third">1463</b>
+					<b class="fourth">232</b>
+				</div>
+				<div class="words">
+					<small class="first">Clients</small>
+					<small class="second">Projects</small>
+					<small class="support">Hours_of_Support</small>
+					<small class="fourth">Hard_workers</small>
+				</div>
+			</div>
+
+		    <br><br>
+
+		   <table class="table2">
+				<td>
+					<div class = "whole">
+						<img src="Images/myob.png" class="image">
+						<div class="overlay">
+						<img src="Images/myobc.png" class="image">
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class = "whole">
+						<img src="Images/belimo.png" class="image">
+						<div class="overlay">
+						<img src="Images/belimoc.png" class="image">
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class = "whole">
+						<img src="Images/lifegroups.png" class="image">
+						<div class="overlay">
+						<img src="Images/lifegroupsc.png" class="image">
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class = "whole">
+						<img src="Images/lilly.png" class="image">
+						<div class="overlay">
+						<img src="Images/lillyc.png" class="image">
+						</div>
+					</div>
+				</td>
+			</table>
+			<table>
+				<td>
+					<div class = "whole">
+						<img src="Images/citrus.png" class="image">
+						<div class="overlay">
+						<img src="Images/citrusc.png" class="image">
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class = "whole">
+						<img src="Images/trustly.png" class="image">
+						<div class="overlay">
+						<img src="Images/trustlyc.png" class="image">
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class = "whole">
+						<img src="Images/oldendorff.png" class="image">
+						<div class="overlay">
+						<img src="Images/oldendorffc.png" class="image">
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class = "whole">
+						<img src="Images/grabyo.png" class="image">
+						<div class="overlay">
+						<img src="Images/grabyoc.png" class="image">
+						</div>
+					</div>
+				</td>
+			</table>
+		</div>
+     <br><br>
+     	<div id = "services">
+     		<br><br><br><br><br>
+		     <div class="Services">
+		     	<br><br>
+		     	<h1 style="text-align: center;">SERVICES</h1>
+		     	<p style="text-align: center;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos<br> quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+		     	<div class="box1">
+		     		<span class="fas fa-baseball-ball" id="ball"></span>
+		     		<h3 class = "b1">Lorem Ipsum</h3>
+		     		<p class = "b2">Voluptatum deleniti atque corrupti<br> quos dolores et quas molestias<br> excepturi sint occaecati cupiditate<br> non provident</p>
+		     	</div>
+		     	<div class="box2">
+		     		<span class="far fa-clipboard" id="note"></span>
+		     		<h3 class = "b1">Dolor Sitema</h3>
+		     		<p class = "b2">Minim veniam, quis nostrud<br> exercitation ullamco laboris nisi ut<br> aliquip ex ea commodo consequat<br> tarad limino ata</p>
+		     	</div>
+		     	<div class="box3">
+		     		<span class="fa fa-file-text" id = "file"></span>
+		     		<h3 class = "b1">Sed ut perspiciatis</h3>
+		     		<p class = "b2">Duis aute irure dolor in<br> reprehenderit in voluptate velit<br> esse cillum dolore eu fugiat nulla<br> pariatur</p>
+		     	</div>
+		     	<div class="box4">
+		     		<span class="far fa-compass" id = "magnet"></span>
+		     		<h3 class = "b1">Magni Dolores</h3>
+		     		<p class = "b2">Excepteur sint occaecat cupidatat<br> non proident, sunt in culpa qui<br> officia deserunt mollit anim id est<br> laborum</p>
+		     	</div>
+		     	<div class="box5">
+		     		<span class="fa fa-globe" id = "globe"></span>
+		     		<h3 class = "b1">Nemo Enim</h3>
+		     		<p class = "b2">At vero eos et accusamus et iusto<br> odio dignissimos ducimus qui<br> blanditiis praesentium voluptatum<br> deleniti atque</p>
+		     	</div>
+		     	<div class="box6">
+		     		<span class="far fa-clock" id = "clock"></span>
+		     		<h3 class = "b1">Eiusmod Tempor</h3>
+		     		<p class = "b2">Et harum quidem rerum facilis est<br> et expedita distinctio. Nam libero<br> tempore, cum soluta nobis est<br> eligendi</p>
+		     	</div>
+		     </div>
+		</div>
+     <br><br>
+       <div id = "portfolio">
+       	<br><br><br><br><br><br><br>
+	     <div class="portfolio">
+	     	<h1 style="text-align: center;">PORTFOLIO</h1>
+	     	<p style="text-align: center;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos<br> quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+		     <div>
+		     	<br><br>
+		     	<div class = "container1">
+					<img src="Images/pic1.png" class="Picture1">
+					<div class="overlay1">
+					<img src="Images/pic1hover.png" class="Picture1">
+					</div>
+				</div>
+				<div class = "container2">
+					<img src="Images/pic2.png" class="Picture2">
+					<div class="overlay2">
+					<img src="Images/pic2hover.png" class="Picture2">
+					</div>
+				</div>
+				<div class = "container3">
+					<img src="Images/pic3.png" class="Picture3">
+					<div class="overlay3">
+					<img src="Images/pic3hover.png" class="Picture3">
+					</div>
+				</div>
+				<div class = "container4">
+					<img src="Images/pic4.png" class="Picture4">
+					<div class="overlay4">
+					<img src="Images/pic4hover.png" class="Picture4">
+					</div>
+				</div>
+				<div class = "container5">
+					<img src="Images/pic5.png" class="Picture5">
+					<div class="overlay5">
+					<img src="Images/pic5hover.png" class="Picture5">
+					</div>
+				</div>
+				<div class = "container6">
+					<img src="Images/pic6.png" class="Picture6">
+					<div class="overlay6">
+					<img src="Images/pic6hover.png" class="Picture6">
+					</div>
+				</div>
+				<div class = "container7">
+					<img src="Images/pic7.png" class="Picture7">
+					<div class="overlay7">
+					<img src="Images/pic7hover.png" class="Picture7">
+					</div>
+				</div>
+				<div class = "container8">
+					<img src="Images/pic8.png" class="Picture8">
+					<div class="overlay8">
+					<img src="Images/pic8hover.png" class="Picture8">
+					</div>
+				</div>
+				<div class = "container9">
+					<img src="Images/pic9.png" class="Picture9">
+					<div class="overlay9">
+					<img src="Images/pic9hover.png" class="Picture9">
+					</div>
+				</div>
+			<div>
+	     </div>
+	 </div>
+	 <div id ="team">
+		     <div class = Team>
+		     	<h1 style="text-align: center;">TEAM</h1>
+		     	<p style="text-align: center;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+		     		<br> quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+		     	<div class="Team1block">
+		     		<img src="Images/team-1.jpg" height="300px" width="250px">
+		     			<div class="Team1">
+				     		<h3>Walter White</h3>
+				     		<p>Chief Executive Officer</p>
+			     		</div>
+		     	</div>
+		     	<div class="Team2block">
+		     		<img src="Images/team-2.jpg" height="300px" width="250px">
+			     		<h3>Sarah Jhonson</h3>
+			     		<p>Product Manager</p>
+		     	</div>
+		     	<div class="Team3block">
+		     		<img src="Images/team-3.jpg" height="300px" width="250px">
+			     		<h3>William Anderson</h3>
+			     		<p>CTO</p>
+		     	</div>
+		     	<div class="Team4block">
+		     		<img src="Images/team-4.jpg" height="300px" width="250px">
+			     		<h3>Amanda Jepson</h3>
+			     		<p>Accountant</p>
+		     	</div>
+		     </div>
+		
+			<div class="Gallery">
+				<h1 style="text-align: center;">GALLERY</h1>
+				<p style="text-align: center;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos<br> quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+				<div class="galleryimages">
+					<img src="Images/gallery-1.jpg" width="250px" height="250px" class="Galleryimg1">
+					<img src="Images/gallery-2.jpg" width="250px" height="250px" class="Galleryimg1">
+					<img src="Images/gallery-3.jpg" width="250px" height="250px" class="Galleryimg1">
+					<img src="Images/gallery-4.jpg" width="250px" height="250px" class="Galleryimg1">
+					<img src="Images/gallery-5.jpg" width="250px" height="250px" class="Galleryimg1">
+					<img src="Images/gallery-6.jpg" width="250px" height="250px" class="Galleryimg1">
+					<img src="Images/gallery-7.jpg" width="250px" height="250px" class="Galleryimg1">
+					<img src="Images/gallery-8.jpg" width="250px" height="250px" class="Galleryimg1">
+				</div>
+			</div>
+	   </div>
+	   <div id = "contact">
+	   		<div class="contact">
+	   			<h1 style="text-align: center;">CONTACT</h1>
+	   			<p style="text-align: center;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos<br> quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+	   		</div>
+	   		<div class="map">
+	   			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7774.7791380755225!2d80.20321817149403!3d13.010845913320384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267406d32d9e9%3A0x615eb3769de88ef6!2sGuindy%20Industrial%20Estate%2C%20SIDCO%20Industrial%20Estate%2C%20Guindy%2C%20Chennai%2C%20Tamil%20Nadu%20600032!5e0!3m2!1sen!2sin!4v1605943928183!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	   		</div>
+
+	   		<div class="details">
+	   			<form>
+	   				<h2 class="locationhead">Location:</h2>
+	   				<p class="locationcontent">A108 Adam Street, New York, NY 535022</p>
+	   				<label for="location"></label>
+	   				<input type="text" id = "location" placeholder="Your Name" size="50" name = "name" required>
+	   				<input type="email" id = "location" placeholder="Your Email" size="50" name="email" required>
+	   				<h2 class="emailhead">Email:</h2>
+	   				<p class="emailcontent">info@example.com</p>
+	   				<label for="email"></label>
+	   				<input type="text" id = "email" placeholder="Subject" size="50" name = "name" required>
+	   				<h2 class="call">Call:</h2>
+	   				<p class="callcontent">+1 5589 55488 55s</p>
+	   				<textarea id = "message" size = "50" placeholder="Message"></textarea>
+	   				<input type="submit" value = "Send Message" name="Send Message" id = submit>
+	   			</form>
+	   		</div>
+	   		<div class="subscribe">
+	   			<br><br>
+	   			<h1 style="text-align: center;">Join Our Newsletter</h1>
+	   			<p style="text-align: center;">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+	   			<form>
+	   				<input type="email"  id = "subscribeinbox" name="Email" >
+	   				<input type="submit" name="submit" id = "subscribebtn" value = "Subscribe">
+	   			</form>
+	   			<br><br>
+	   		</div>
+	   </div>
+	   <div class="end">
+		   	<div>
+			<h2>Butterfly</h2>
+			<p>A108 Adam Street<br>
+			New York, NY 535022<br>
+			United States</p>
+			<p>Phone: +1 5589 55488 55</p>
+			<p>Email: info@example.com</p>
+		    </div>
+		    <div class="UsefulLinks">
+		    	<h2>Useful links</h2>
+		    	<p href=""> > Home</p>
+		    	<p href=""> > About us</p>
+		    	<p href=""> > Services</p>
+		    	<p href=""> > Terms of service</p>
+		    	<p href=""> > Privacy policy</p>
+		    </div>
+		     <div class="UsefulLinks2">
+		    	<h2>Our Services</h2>
+		    	<p href=""> > Web Design</p>
+		    	<p href=""> > Web Development</p>
+		    	<p href=""> > Product Management</p>
+		    	<p href=""> > Marketing</p>
+		    	<p href=""> > Graphic Design</p>
+		    </div>
+		    <div class="social">
+		    	<h2>Our Social Networks</h2>
+		    	<p>Cras fermentum odio eu feugiat lide<br> par naso tierra videa magna derita<br> valies</p>
+		    	<div class="icon-bar">
+				  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+				  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+				  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+				  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+				  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+				</div>
+
+		    </div>
+	   </div>
+	   <div class="final">
+	   	<br><br>
+		   	<strong style=";margin-left: 7%;">© Copyright <b>Butterfly</b>. All Rights Reserved</strong>
+		   	<strong style="float: right;margin-right: 7%;">Designed by BootstrapMade</strong>
+	   </div>
+	   <br><br><br>
+</body>
+</html>
+

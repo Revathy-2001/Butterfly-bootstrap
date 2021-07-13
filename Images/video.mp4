@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://bootstrapmade.com/demo/Butterfly/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butterfly Bootstrap Template Demo</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/" rel="dns-prefetch">
+  <link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+  <link href="./video_files/css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./video_files/demo-1.0.0.css">
+  </head>
+
+<body>
+  <header id="header">
+
+    <div class="logo">
+      <a href="https://bootstrapmade.com/"><img src="./video_files/logo.png" title="Back to BootstrapMade Homepage"></a>
+    </div>
+    <div class="preview-devices">
+      <ul>
+        <li class="preview-test preview-devices-active" id="preview-test-desktop" title="Preview the  Butterfly Template in Desktop Mode"><a href="https://bootstrapmade.com/demo/Butterfly/"><i class="icon-desktop"></i></a></li>
+        <li class="preview-test" id="preview-test-tablet" title="Preview the  Butterfly Template in Tablet Mode"><a href="https://bootstrapmade.com/demo/Butterfly/"><i class="icon-tablet"></i></a></li>
+        <li class="preview-test" id="preview-test-mobile" title="Preview the  Butterfly Template in Mobile Mode"><a href="https://bootstrapmade.com/demo/Butterfly/"><i class="icon-mobile"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="navigate">
+      <ul>
+        <li><a href="https://bootstrapmade.com/demo/templates/Butterfly/" target="_top" title="Hide the demo bar"><i class="icon-exit"></i></a></li>
+        <li><a href="https://bootstrapmade.com/butterfly-free-bootstrap-theme/" title="Butterfly Template Home Page"><i class="icon-home"></i></a></li>
+        <li><a class="download" href="https://bootstrapmade.com/butterfly-free-bootstrap-theme/#download" title="Download the Butterfly Template"><i class="icon-download"></i> <span>Free Download</span></a></li>
+                  <li><a href="https://bootstrapmade.com/demo/Techie/" title="Previous Template: Techie" target="_top"><i class="icon-left-arrow"></i></a></li>
+        
+                <li><a href="https://bootstrapmade.com/demo/Bikin/" title="Next Template: Bikin" target="_top"><i class="icon-right-arrow"></i></a></li>
+              </ul>
+    </div>
+
+  </header>
+
+  <div id="preview">
+    <iframe id="preview-frame" class="preview-desktop" src="./video_files/saved_resource.html" frameborder="0"></iframe>
+  </div>
+
+      <script async="" src="./video_files/analytics.js.download"></script><script src="./video_files/demo-1.0.0.js.download"></script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-55234356-4', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+</body></html>
